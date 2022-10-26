@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Pages/common/Footer/Footer';
 import Header from '../Pages/common/Header/Header';
 import Sidebar from '../Pages/common/Sidebar/Sidebar';
+import FAQ from '../FAQ/FAQ';
 
 const Main = () => {
     return (
@@ -22,6 +23,7 @@ const Main = () => {
 </Row>
 
         </Container>
+       <FAQ></FAQ>
         <Footer></Footer>
         </div>
     );

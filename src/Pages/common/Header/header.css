@@ -1,0 +1,8 @@
+.header img{
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+}
+.header-bg{
+    background-color: rgba(0,0,0,.9);
+}
