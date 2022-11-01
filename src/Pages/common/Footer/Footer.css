@@ -1,0 +1,14 @@
+.footer{
+    background-color: black;
+
+}
+.footer img{
+    height: 50px;
+    width: 50px;
+}
+.footer-logo{
+    margin-left: 400px;
+}
+.footer p {
+    color: darkgrey;
+}

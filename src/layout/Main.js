@@ -23,7 +23,7 @@ const Main = () => {
 </Row>
 
         </Container>
-       <FAQ></FAQ>
+       
         <Footer></Footer>
         </div>
     );

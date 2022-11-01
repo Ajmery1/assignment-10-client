@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './Sidebar.css'
 const Sidebar = () => {
     const [categories, setCategories] = useState([]);
     useEffect( () =>{
@@ -9,15 +10,17 @@ const Sidebar = () => {
         .then(data => setCategories(data));
     }, [])
     return (
-        <div>
-        <h2>This is sidebar: {categories.length}</h2>
+        <div className='sidebar'>
+        <h2>Course Overview</h2>
         <div>
                 {
-                    categories.map(category => <p key={category.id}>
+                    categories.map(category => <h5 key={category.id}>
                         <Link to={`/category/${category.id}`}>{category.name}</Link>
-                    </p>)
+                    </h5>)
+                    
                 }
-            </div> 
+            </div>
+            
         </div>
     );
 };
